@@ -4,6 +4,7 @@ import s from './app.module.css';
 
 const HeaderMenu = lazy(() => import("../modules/HeaderMenu"));
 const HomePage = lazy(() => import("../pages/HomePage"));
+const SearchPage = lazy(() => import("../pages/SearchPage"));
 
 export const App = () => {
     return (
@@ -11,12 +12,12 @@ export const App = () => {
             <HeaderMenu />
             <Routes>
                 <Route path="/" element={<HomePage />} />
-                {/* <Route path="/movies" element={<SearchPage />} />
-        <Route path="movies/:id" element={<SingleMoviePage />}>
+                <Route path="/movies" element={<SearchPage />} />
+        {/* <Route path="movies/:id" element={<SingleMoviePage />}>
           <Route path="cast" element={<CastPage />} />
           <Route path="reviews" element={<ReviewsPage />} />
-        </Route>
-        <Route path={"*"} element={<NotFoundPage />} /> */}
+        </Route> */}
+        {/* <Route path={"*"} element={<NotFoundPage />} /> */}
             </Routes>
         </Suspense>
     );
