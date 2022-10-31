@@ -1,0 +1,31 @@
+.container {
+    /* background-color: aliceblue; */
+    text-decoration: none;
+    list-style: none;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    
+}
+a{
+    color: azure;
+    text-decoration: none;
+    padding: 5px;
+    transition: all 250ms linear;
+}
+a:hover{
+    color: aliceblue;
+    background-color: black;
+}
+li{
+    margin-top: 10px;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
