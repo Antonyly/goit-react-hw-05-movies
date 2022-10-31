@@ -13,20 +13,20 @@ const MoviesList = () => {
 const from = useLocation();
     useEffect(() => {
         const fetchMovies = async () => {
-            setState(prevState => ({
-                ...prevState,
+            setState(p => ({
+                ...p,
                 loading: true,
             }));
             try {
                 const data = await getTrendingMovies();
-                setState(prevState => ({
-                    ...prevState,
+                setState(p => ({
+                    ...p,
                     items: [...data],
                     loading: false,
                 }))
             } catch (error) {
-                setState(prevState => ({
-                    ...prevState,
+                setState(p => ({
+                    ...p,
                     loading: false,
                     error,
                 }))
