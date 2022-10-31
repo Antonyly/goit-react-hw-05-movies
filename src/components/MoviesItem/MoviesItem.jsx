@@ -14,7 +14,8 @@ const MoviesItem = ({ item }) => {
     const genresItem = genres.map(item => (
         <li key={nanoid()}>{item.name}</li>
     ));
-    const releaseDate = release_date.slice(0,4)
+    const releaseDate = release_date.slice(0, 4)
+    const voteAverage = (vote_average * 10).toFixed(0);
     
     return (
         <div className={s.container}>
@@ -28,7 +29,7 @@ const MoviesItem = ({ item }) => {
             <div >
                 <h2>{`${title} (${releaseDate})`}</h2>
             <p>
-              USER SCORE: <span className={s.text}>{vote_average * 10}%</span>
+              USER SCORE: <span className={s.text}>{voteAverage}%</span>
             </p>
             <p>
               OVERVIEW: <span className={s.text}>{overview}</span>
