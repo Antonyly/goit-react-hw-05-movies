@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useParams, useNavigate, NavLink, Outlet, Link, useLocation } from "react-router-dom";
+import { useParams, NavLink, Outlet, Link, useLocation } from "react-router-dom";
 import MoviesItem from '../../components/MoviesItem';
 
 import { getMovieById } from '../../shared/api/services';
