@@ -21,8 +21,8 @@ const MoviesItem = ({ item }) => {
     const releaseDate = release_date.slice(0, 4)
     const voteAverage = (vote_average * 10).toFixed(0);
     const location = useLocation();
-    const comeBack = location.state?.from || '/'
-    
+    // const comeBack = location.state?.from || '/'
+    const comeBack = location.state || '/'
     return (
         <>
             <Link to={comeBack}>Go back</Link>
